@@ -29,6 +29,7 @@ namespace WebSharp2
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.chromiumWebBrowser1 = new CefSharp.WinForms.ChromiumWebBrowser();
             this.btnSearch = new System.Windows.Forms.Button();
             this.urlField = new System.Windows.Forms.TextBox();
@@ -48,7 +49,7 @@ namespace WebSharp2
 // TODO: Code generation for '' failed because of Exception 'Invalid Primitive Type: System.IntPtr. Consider using CodeObjectCreateExpression.'.
             this.chromiumWebBrowser1.Location = new System.Drawing.Point(0, 74);
             this.chromiumWebBrowser1.Name = "chromiumWebBrowser1";
-            this.chromiumWebBrowser1.Size = new System.Drawing.Size(959, 415);
+            this.chromiumWebBrowser1.Size = new System.Drawing.Size(959, 430);
             this.chromiumWebBrowser1.TabIndex = 0;
             this.chromiumWebBrowser1.LoadingStateChanged += new System.EventHandler<CefSharp.LoadingStateChangedEventArgs>(this.chromiumWebBrowser1_LoadingStateChanged);
             // 
@@ -124,7 +125,7 @@ namespace WebSharp2
             // 
             this.btnReload.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnReload.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnReload.BackgroundImage = global::WebSharp2.Properties.Resources.reload1;
+            this.btnReload.BackgroundImage = global::WebSharp2.Properties.Resources.reload;
             this.btnReload.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnReload.FlatAppearance.BorderSize = 0;
             this.btnReload.Location = new System.Drawing.Point(900, 26);
@@ -140,7 +141,9 @@ namespace WebSharp2
             this.ClientSize = new System.Drawing.Size(960, 507);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.chromiumWebBrowser1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
+            this.Text = "Ideal Web";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
